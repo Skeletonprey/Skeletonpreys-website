@@ -7,28 +7,30 @@
 <body>
     <h1>Skeletonprey's Website</h1>
     <h2>I will put stuff here.</h2>
-    <p>I like video game like genshin impact, osu, and minecraft</p>
+    <p>I like video game like genshin impact, osu, valorant, and minecraft</p>
 </body>
-<ul class="nav nav-tabs">
-    <li class="active"><a href="#">Home</a></li>
-    <li><a href="genshin">genshin impact</a></li>
-    <li><a href="osu">osu!</a></li>
-    <li><a href="minecraft">minecraft</a></li>
-    <div class="tab-content">
-        <div id="genshin" class="tab-pane fade in active">
-          <h3>genshin impact</h3>
-          <p>In Genshin I am Ar 47, I have 4 5 stars: Diluc, Mona, Childe, and Venti. 
-            I hope to get Zhongli on the rerun. 
-            Uid
-    </p>
-        </div>
-        <div id="osu" class="tab-pane fade">
-          <h3>osu!</h3>
-          <p>I am rank low 600k. I try to farm as little as possible.</p>
-        </div>
-        <div id="minecraft" class="tab-pane fade">
-          <h3>minecraft</h3>
-          <p>I usualy either play bedwars with freinds or on private smps. I used to play bedwars solo and alot of hypixel skyblock. My ign is skqtor</p>
-        </div>
-  </ul>
+<button class="tablink" onclick="openPage('genshin', this, 'red')">Home</button>
+<button class="tablink" onclick="openPage('osu', this, 'green')" id="defaultOpen">News</button>
+<button class="tablink" onclick="openPage('minecraft', this, 'blue')">Contact</button>
+<button class="tablink" onclick="openPage('valorant', this, 'orange')">About</button>
+
+<div id="genshin" class="tabcontent">
+  <h3>Genshin Impact</h3>
+  <p>I play genshin impact. I have 4 5 stars. Ar 47</p>
+</div>
+
+<div id="osu" class="tabcontent">
+  <h3>osu</h3>
+  <p>I am low 600k. try to not farm</p>
+</div>
+
+<div id="minecraft" class="tabcontent">
+  <h3>minecraft</h3>
+  <p>I play minecraft with freinds on smps and bedwars.</p>
+</div>
+
+<div id="valorant" class="tabcontent">
+  <h3>valorant</h3>
+  <p>I am new to valorant.</p>
+</div> 
 </html>
