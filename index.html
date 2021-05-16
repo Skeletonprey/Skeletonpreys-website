@@ -4,35 +4,37 @@
 <head>
     <title> Skeletonprey's Website</title>
 </head>
+<script src="script.js" defer></script>
+<link href="styles.css" rel="stylesheet">
 <body>
     <h1>Skeletonprey's Website</h1>
     <h2>I will put stuff here.</h2>
     <p>I like video game like genshin impact, osu, valorant, and minecraft</p>
+    <ul>
+      <li data-tab-target="#Genshin impact">Genshin Impact</li>
+      <li data-tab-target="#osu">osu!</li>
+      <li data-tab-target="#valorant">Valorant</li>
+      <li data-tab-target="#minecraft">minecraft</li>
+    </ul>
+    <div class="tab-content">
+      <div id="Genshin impact" data-tab-content>
+        <h1> Genshin Impact</h1>
+        <p>This is where to talk about genshin.</p>
+      </div>
+      <div id="osu" data-tab-content>
+        <h1>osu</h1>
+        <p>This is where to talk about genshin.</p>
+      </div>
+      <div id="valorant" data-tab-content>
+        <h1>Valorant</h1>
+        <p>This is where to talk about valorant.</p>
+      </div>
+      <div id="minecraft" data-tab-content>
+        <h1>minecraft</h1>
+        <p>This is where to talk about minecraft.</p>
+      </div>
+    </div>
 </body>
-<button class="tablink" onclick="openPage('genshin', this, 'red')">Genshin</button>
-<button class="tablink" onclick="openPage('osu', this, 'green')" id="defaultOpen">osu!</button>
-<button class="tablink" onclick="openPage('minecraft', this, 'blue')">minecraft!</button>
-<button class="tablink" onclick="openPage('valorant', this, 'orange')">Valorant</button>
-
-<div id="genshin" class="tabcontent">
-  <h3>Genshin Impact</h3>
-  <p>I play genshin impact. I have 4 5 stars. Ar 47</p>
-</div>
-
-<div id="osu" class="tabcontent">
-  <h3>osu</h3>
-  <p>I am low 600k. try to not farm</p>
-</div>
-
-<div id="minecraft" class="tabcontent">
-  <h3>minecraft</h3>
-  <p>I play minecraft with freinds on smps and bedwars.</p>
-</div>
-
-<div id="valorant" class="tabcontent">
-  <h3>valorant</h3>
-  <p>I am new to valorant.</p>
-  
 </div> 
 
 </html>
